@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-10 mx-auto">
+          <div class="card">
+              <div class="card-body">
+                  <h2 class="card-title text-center">Information sur l'intervention n° {{code}}</h2>
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Code Intervention :</b> {{ins.code_intervention}}</li>
+                  <li class="list-group-item"><b>Matricule Intervention :</b> {{ins.matricule_intervention}}</li>
+                  <li class="list-group-item"><b>Nom Intervenant :</b> {{ins.nom_intervenant}}</li>
+                  <li class="list-group-item"><b>Grade Intervenant :</b> {{ins.grade_intervenant}}</li>
+                  <li class="list-group-item"><b>Nom Patient :</b> {{ins.nom_patient}}</li>
+                  <li class="list-group-item"><b>Date Intervention :</b> {{ins.date_intervention|date:'yyyy/MM/dd'}}</li>
+              </ul>
+          </div>
+          <div class="text-center">
+              <button type="button" class="btn btn-outline-secondary mt-3" (click)="toList()">Return</button>
+          </div>
+      </div>
+  </div>
+</div>

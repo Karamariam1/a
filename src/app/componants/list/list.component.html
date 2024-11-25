@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="row">
+      <h2>Liste des Interventions</h2>
+  </div>
+  <div class="row mt-4">
+      <table class="table table-striped table-inverse table-responsive">
+          <thead class="thead-inverse">
+              <tr>
+                  <th>Code Intervention</th>
+                  <th>Date Intervention</th>
+                  <th>Grade Intervenant</th>
+                  <th>Matricule Intervention</th>
+                  <th>Nom Intervenant</th>
+                  <th>Nom Patient</th>
+                  <th colspan="2">Action</th>
+              </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let e of interventions">
+                      <td scope="row">{{e.code_intervention}}</td>
+                      <td>{{e.date_intervention| date:'yyyy/MM/dd'}}</td>
+                      <td>{{e.grade_intervenant}}</td>
+                      <td>{{e.matricule_intervention}}</td>
+                      <td>{{e.nom_intervenant}}</td>
+                      <td>{{e.nom_patient}}</td>
+                      <td><button type="button" class="btn btn-secondary" (click)="Profile(e.code_intervention)">Profile</button></td>
+                      <td><button type="button" class="btn btn-danger" (click)="Supprimer(e.code_intervention)">Supprimer</button></td>
+                  </tr>
+              </tbody>
+      </table>
+  </div>
+</div>

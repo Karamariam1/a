@@ -1,0 +1,10 @@
+addEnseignant(newEnseignant: Enseignant): void {
+  // Récupérer les données existantes du localStorage
+  const existingData = JSON.parse(localStorage.getItem('enseignants') || '[]');
+
+  // Ajouter le nouvel enseignant à la liste
+  existingData.push(newEnseignant);
+
+  // Sauvegarder la liste mise à jour dans le localStorage
+  localStorage.setItem('enseignants', JSON.stringify(existingData));
+}

@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row">
+      <h2>Ajouter Intervention</h2>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="form-group">
+              <label for="" class="my-2">Code Intervention</label>
+              <input type="text" class="form-control" [(ngModel)]="ins.code_intervention">
+          </div>
+          <div class="form-group">
+              <label for="" class="my-2">Matricule Intervention</label>
+              <input type="text" class="form-control" [(ngModel)]="ins.matricule_intervention">
+          </div>
+          <div class="form-group">
+              <label for="" class="my-2">Nom Intervenant</label>
+              <input type="text" class="form-control" [(ngModel)]="ins.nom_intervenant">
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="form-group">
+              <label for="" class="my-2">Grade Intervenant</label>
+                <select class="form-select" [(ngModel)]="ins.grade_intervenant">
+                  <option value="aide-soignant">aide-soignant</option>
+                  <option value="infirmier">infirmier</option>
+                  <option value="médecin">médecin</option>
+                  <option value="pédicure">pédicure</option>
+                </select>
+          </div>
+          <div class="form-group">
+              <label for="" class="my-2">Nom Patient</label>
+              <input type="text" class="form-control" [(ngModel)]="ins.nom_patient">
+          </div>
+          <div class="form-group">
+              <label for="" class="my-2">Date Intervention</label>
+              <input type="date" class="form-control" [(ngModel)]="ins.date_intervention">
+          </div>
+      </div>
+      <div class="col-md-6 my-3">
+          <button type="button" class="btn btn-outline-secondary" (click)="Ajouter()">Ajouter</button>
+      </div>
+  </div>
+</div>
