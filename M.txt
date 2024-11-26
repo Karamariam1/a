@@ -1,0 +1,84 @@
+MAEVEN
+-Commandes Maven
+mvn validate : Vérifie si les fichiers pom.xml sont corrects.
+mvn compile : Compile le code source du projet.
+mvn test : Teste le code source compilé.
+mvn package : Construit le projet Maven et crée des fichiers JAR ou WAR.
+mvn install : Fait le même travail que package, mais ajoute le fichier au dépôt local.
+(Optionnel) mvn deploy : Copie l'application JAR dans un dépôt distant.
+
+-Dépôt local de Maven : Un répertoire sur l'ordinateur où Maven s'exécute.
+mvn clean : Nettoie le projet Maven en supprimant le répertoire target.
+mvn clean install : Supprime toutes les compilations précédentes, démarre la construction à partir d'un état propre, compile, teste et empaquette le projet Java, puis installe les fichiers JAR ou WAR dans le dépôt local.
+
+-Organisation du code dans Maven
+Le code source Java est censé se trouver dans le dossier /src/main/java.
+Maven place les classes Java compilées dans le dossier target/classes.
+Maven crée également un fichier .jar ou .war, selon votre projet, qui se trouve dans le dossier target.
+
+In the end, your project will look like this:
++ myproject
+    + -- src
+        + -- main
+            + -- java
+                 MyApp.java
+    + -- target
+        + -- classes (after 'mvn compile')
+             MyApp.class
+
+        myproject.jar (upon mvn package or mvn install)
+
+    pom.xml
+
+Un fichier pom.xml (Project Object Model) est le cœur d’un projet Maven. Il contient toutes les configurations nécessaires à Maven pour construire, tester, empaqueter, et gérer les dépendances du projet.
+Plugins Maven
+Les plugins permettent d'ajouter des fonctionnalités supplémentaires, comme la compilation, les tests ou l'empaquetage.
+ le pom.xml est un fichier XML structuré qui décrit :
+
+Le projet (nom, version, organisation).
+Les dépendances (bibliothèques requises).
+Les plugins (outils pour automatiser certaines tâches).
+Les dépôts (où trouver ou envoyer les dépendances).
+Les configurations spécifiques pour différents environnements.
+Avec Maven, le pom.xml automatise la plupart des tâches de construction et de gestion des projets Java.
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>    <!-- Identifiant de l'organisation ou du projet -->
+    <artifactId>myproject</artifactId> <!-- Nom du projet -->
+    <version>1.0.0</version>          <!-- Version du projet -->
+    <packaging>jar</packaging>        <!-- Type du fichier généré : jar ou war -->
+    <name>My Project</name>           <!-- Nom descriptif -->
+</project>
+
+Initialiser un projet Maven
+mvn archetype:generate
+Compiler le projet
+mvn compile
+Exécuter les tests
+mvn test
+Générer le package (JAR/WAR)
+mvn package
+Nettoyer le projet (supprimer les fichiers générés)
+mvn clean
+Build complet : nettoyer, compiler, installer
+mvn clean install
+Installer un artefact dans le référentiel local
+mvn install
+Déployer un artefact dans un référentiel distant
+mvn deploy
+Mettre à jour les dépendances
+mvn dependency:resolve
+Afficher les dépendances sous forme d’arborescence
+mvn dependency:tree
+Vérifier le projet
+mvn validate
+Générer des rapports (qualité du code, documentation)
+mvn site
+Exécuter une application Java avec Maven
+mvn exec:java -Dexec.mainClass="com.example.Main"
+Mettre à jour la configuration pour Eclipse
+mvn eclipse:eclipse
+Activer un profil Maven spécifique
+mvn clean install -PnomDuProfil

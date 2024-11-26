@@ -1,0 +1,76 @@
+### DevOps  
+
+**DevOps** est une combinaison de **philosophies culturelles**, de **pratiques** et d’**outils** visant à améliorer la capacité d'une entreprise à livrer des applications et des services rapidement et efficacement. Son objectif principal est de transformer les idées en valeur pour les clients en créant un environnement collaboratif et performant.
+
+---
+
+### **Amélioration du flux d’une idée vers la valeur pour le client**  
+
+1. **Collaboration accrue** : Développement et exploitation travaillent ensemble, supprimant les silos.  
+2. **Automatisation** : Réduction des tâches manuelles pour se concentrer sur l'innovation.  
+3. **Cycles de publication courts** : Fonctionnalités livrées rapidement et régulièrement.  
+4. **Amélioration de la qualité** : Tests automatisés et intégration continue permettent de détecter les erreurs tôt.  
+
+---
+
+### **Les trois voies de DevOps**  
+
+1. **Accélération du flux de travail (WIP)** : Réduction des blocages pour livrer rapidement de la valeur.  
+2. **Maîtrise de l'environnement** : Garantir des environnements stables, reproductibles et fiables.  
+3. **Création de feedback rapides** : Favoriser une amélioration continue grâce à des retours réguliers.  
+
+Ces voies soutiennent une boucle d’apprentissage et d’amélioration continue.  
+
+---
+
+### **Culture DevOps : Les 5 piliers CALMS**  
+
+1. **Culture** : Collaboration pour des objectifs communs.  
+2. **Automation** : Livraison continue grâce à l’automatisation.  
+3. **Lean** : Flux optimisé pour maximiser la valeur client.  
+4. **Measurement** : Mesures pour guider l'amélioration continue.  
+5. **Sharing** : Partage des informations, retours et objectifs entre les équipes.  
+
+---
+
+### **Principes clés dans la culture DevOps**  
+
+- **Collaboration, visibilité et alignement** : Partager les processus, priorités et objectifs pour un travail en équipe cohérent.  
+- **Cycles de mise en production courts** : Réduction des risques, adaptation rapide aux besoins clients, amélioration incrémentale.  
+- **Apprentissage continu** : Favoriser une culture de croissance où les échecs sont des opportunités pour s'améliorer.  
+
+---
+
+### **Évolution des rôles et responsabilités**  
+
+- **Développeurs** : S’assurent de la performance et de la stabilité en production.  
+- **Opérateurs IT** : Participent à la sécurité, à la gouvernance et à la conformité dès la phase de développement.  
+
+---
+
+**DevOps** repose sur la collaboration, l'automatisation et une mentalité d'amélioration continue, permettant aux équipes de livrer plus rapidement des solutions de qualité tout en répondant aux besoins des clients et du marché.
+
+
+1.	Cloud Public :
+	•	Pas de serveurs physiques ni de maintenance nécessaires.
+	•	Élastique et évolutif.
+	•	Peu coûteux.
+	•	Utilisé par plusieurs utilisateurs.
+	•	Stockage illimité.
+	•	Exemples : Web, messagerie, CRM, RH.
+2.	Cloud Privé :
+	•	Nécessite des serveurs physiques et de la maintenance.
+	•	Pas élastique.
+	•	Flexible à gérer.
+	•	Coût élevé.
+	•	Usage réservé à un seul utilisateur.
+	•	Stockage limité.
+	•	Exemples : ERP, R&D, BI, analyse, logistique.
+3.	Cloud Hybride :
+	•	Combine les caractéristiques des deux.
+	•	Nécessite des serveurs et de la maintenance.
+	•	Élastique, évolutif et flexible.
+	•	Coût moyen.
+	•	Convient aux utilisateurs uniques et multiples.
+	•	Stockage illimité avec option de “cloud bursting”.
+	•	Exemples : Centres d’appels, banques, sites distants.
